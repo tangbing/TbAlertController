@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4DC54E2DA4AE974337365D /* Pods_TbAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FF783318823F2226701220 /* Pods_TbAlertController.framework */; };
 		33B9BE68267B9C2F00C062C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BE67267B9C2F00C062C3 /* AppDelegate.swift */; };
 		33B9BE6A267B9C2F00C062C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BE69267B9C2F00C062C3 /* SceneDelegate.swift */; };
 		33B9BE6C267B9C2F00C062C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BE6B267B9C2F00C062C3 /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		33B9BE71267B9C3100C062C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B9BE70267B9C3100C062C3 /* Assets.xcassets */; };
 		33B9BE74267B9C3100C062C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B9BE72267B9C3100C062C3 /* LaunchScreen.storyboard */; };
 		33B9BE7F267B9DEC00C062C3 /* TbAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BE7E267B9DEC00C062C3 /* TbAlertController.swift */; };
+		33B9BEBA267F570D00C062C3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BEB9267F570D00C062C3 /* UIColorExtension.swift */; };
+		33B9BEE9267FA06C00C062C3 /* TbAlertFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9BEE8267FA06C00C062C3 /* TbAlertFadeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		33B9BE73267B9C3100C062C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33B9BE75267B9C3200C062C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B9BE7E267B9DEC00C062C3 /* TbAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbAlertController.swift; sourceTree = "<group>"; };
+		33B9BEB9267F570D00C062C3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		33B9BED4267F9D9100C062C3 /* TbAlertController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TbAlertController-Bridging-Header.h"; sourceTree = "<group>"; };
+		33B9BEE8267FA06C00C062C3 /* TbAlertFadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbAlertFadeAnimation.swift; sourceTree = "<group>"; };
+		67CBE4785571F7E873D4C2F8 /* Pods-TbAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TbAlertController.release.xcconfig"; path = "Target Support Files/Pods-TbAlertController/Pods-TbAlertController.release.xcconfig"; sourceTree = "<group>"; };
+		75A5ED8C801CD39F0E92AFBF /* Pods-TbAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TbAlertController.debug.xcconfig"; path = "Target Support Files/Pods-TbAlertController/Pods-TbAlertController.debug.xcconfig"; sourceTree = "<group>"; };
+		E0FF783318823F2226701220 /* Pods_TbAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TbAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4DC54E2DA4AE974337365D /* Pods_TbAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE77C1C6D00EB0E239D2B78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0FF783318823F2226701220 /* Pods_TbAlertController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143B084E8FF00209BAB71632 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75A5ED8C801CD39F0E92AFBF /* Pods-TbAlertController.debug.xcconfig */,
+				67CBE4785571F7E873D4C2F8 /* Pods-TbAlertController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		33B9BE5B267B9C2F00C062C3 = {
 			isa = PBXGroup;
 			children = (
 				33B9BE66267B9C2F00C062C3 /* TbAlertController */,
 				33B9BE65267B9C2F00C062C3 /* Products */,
+				143B084E8FF00209BAB71632 /* Pods */,
+				0CE77C1C6D00EB0E239D2B78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +102,20 @@
 		33B9BE7D267B9DC900C062C3 /* TbAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				33B9BEDA267F9DAA00C062C3 /* AlertAnimations */,
+				33B9BEB9267F570D00C062C3 /* UIColorExtension.swift */,
 				33B9BE7E267B9DEC00C062C3 /* TbAlertController.swift */,
+				33B9BED4267F9D9100C062C3 /* TbAlertController-Bridging-Header.h */,
 			);
 			path = TbAlertController;
+			sourceTree = "<group>";
+		};
+		33B9BEDA267F9DAA00C062C3 /* AlertAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				33B9BEE8267FA06C00C062C3 /* TbAlertFadeAnimation.swift */,
+			);
+			path = AlertAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33B9BE78267B9C3200C062C3 /* Build configuration list for PBXNativeTarget "TbAlertController" */;
 			buildPhases = (
+				4926FCEDC7B46003AE587E21 /* [CP] Check Pods Manifest.lock */,
 				33B9BE60267B9C2F00C062C3 /* Sources */,
 				33B9BE61267B9C2F00C062C3 /* Frameworks */,
 				33B9BE62267B9C2F00C062C3 /* Resources */,
+				F1269F279276E708DC41B6A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,6 +151,7 @@
 				TargetAttributes = {
 					33B9BE63267B9C2F00C062C3 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -143,6 +186,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4926FCEDC7B46003AE587E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TbAlertController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1269F279276E708DC41B6A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TbAlertController/Pods-TbAlertController-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TbAlertController/Pods-TbAlertController-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TbAlertController/Pods-TbAlertController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33B9BE60267B9C2F00C062C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +235,8 @@
 			files = (
 				33B9BE7F267B9DEC00C062C3 /* TbAlertController.swift in Sources */,
 				33B9BE6C267B9C2F00C062C3 /* ViewController.swift in Sources */,
+				33B9BEBA267F570D00C062C3 /* UIColorExtension.swift in Sources */,
+				33B9BEE9267FA06C00C062C3 /* TbAlertFadeAnimation.swift in Sources */,
 				33B9BE68267B9C2F00C062C3 /* AppDelegate.swift in Sources */,
 				33B9BE6A267B9C2F00C062C3 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,9 +382,11 @@
 		};
 		33B9BE79267B9C3200C062C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A5ED8C801CD39F0E92AFBF /* Pods-TbAlertController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PRN7UWLM6M;
 				INFOPLIST_FILE = TbAlertController/Info.plist;
@@ -307,6 +396,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.epipe.Epipe.TbAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TbAlertController/TbAlertController/TbAlertController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,9 +405,11 @@
 		};
 		33B9BE7A267B9C3200C062C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67CBE4785571F7E873D4C2F8 /* Pods-TbAlertController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PRN7UWLM6M;
 				INFOPLIST_FILE = TbAlertController/Info.plist;
@@ -326,6 +419,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.epipe.Epipe.TbAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TbAlertController/TbAlertController/TbAlertController-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
